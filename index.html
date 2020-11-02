@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <!--Title and Meta Tags-->
+        <title>Home</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="robots" content="noodpt"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+        <!--Stylesheets-->
+        <link rel="stylesheet" type="text/css" href="css/master.css" />
+        <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+        <link href="css/all.css" rel="stylesheet"> <!--fontawesome-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">        
+        <link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+
+        <div id="page_header"">
+
+                <div id="clock">00:00</div>
+                <div id="date">Monday 10 April</div>   
+
+                <div class="search">
+                        <form action="https://www.google.co.uk/search" method="get" autocomplete="off">
+                                <input type="text" name="q" placeholder="Search" autofocus>
+                        </form>
+                </div>
+
+        </div>
+
+        <!-- Content will be injected here from generatePage.js -->
+        <div class="container_master">
+            <span id="defaultMessage" style="background-color: black; color: white; width: 85%; text-align: center;">
+                <div>
+                Either your browser does not support javascript, or there is a javascript error, probably in pageData.js causing the columns to not be generated properly.
+                </div>
+                <div>
+                Please refer to the console for possible error logs.
+                </div>
+            </span>
+        </div>
+        
+        <script>
+            if (!("ontouchstart" in document.documentElement)) {
+                document.documentElement.className += "no-touch";
+            }
+        </script>
+        <script src="js/pageData.js"></script>
+        <script src="js/generatePage.js"></script>
+</body>
+</html>
